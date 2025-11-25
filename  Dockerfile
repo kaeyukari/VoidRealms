@@ -1,10 +1,5 @@
 FROM php:8.2-apache
 
-# Copia todos os arquivos do seu projeto para o diretório do Apache no container
 COPY . /var/www/html/
-
-# Expor a porta 80 (HTTP)
 EXPOSE 80
-
-# Ativar mod_rewrite se necessário
 RUN a2enmod rewrite
