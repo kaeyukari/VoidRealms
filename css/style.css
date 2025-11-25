@@ -1,0 +1,11 @@
+.limpar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;    
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+
+.bordasup{
+    margin-top: 10px;
+}
