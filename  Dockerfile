@@ -1,11 +1,10 @@
-# Usa imagem oficial do PHP com Apache
 FROM php:8.2-apache
 
-# Copia todo o projeto para o diretório padrão do Apache
+# Copia todos os arquivos do seu projeto para o diretório do Apache no container
 COPY . /var/www/html/
 
-# Expõe a porta 80
+# Expor a porta 80 (HTTP)
 EXPOSE 80
 
-# Ativa mod_rewrite (opcional, útil se usar URLs amigáveis)
+# Ativar mod_rewrite se necessário
 RUN a2enmod rewrite
